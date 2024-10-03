@@ -642,7 +642,7 @@ namespace System.Windows.Interop
                 // peer is on the layout manager's AutomationEvents list.
                 // [See <see cref="EventMap.NotifySources"/> for full discussion.  This is part (a)]
                 if (value != null && _hwndTarget != null && !_hwndTarget.IsDisposed &&
-                    MS.Internal.Automation.EventMap.HasListeners)
+                    MS.Internal.Automation.EventMap.HasRegisteredEvent(Automation.Peers.AutomationEvents.AutomationFocusChanged))
                 {
                     _hwndTarget.EnsureAutomationPeer(value);
                 }
