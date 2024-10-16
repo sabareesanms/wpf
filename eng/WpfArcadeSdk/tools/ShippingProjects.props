@@ -29,6 +29,7 @@
       PresentationFramework.Luna;
       PresentationFramework.Royale;
       PresentationFramework.Fluent;
+      System.Windows.Controls.Ribbon.Fluent;
       WindowsFormsIntegration;
       PenImc;
       wpfgfx;
