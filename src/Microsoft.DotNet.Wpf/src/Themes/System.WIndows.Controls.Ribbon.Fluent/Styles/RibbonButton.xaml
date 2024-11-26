@@ -17,14 +17,6 @@
                     xmlns:primitives="clr-namespace:System.Windows.Controls.Ribbon.Primitives"
                     xmlns:shell="clr-namespace:System.Windows.Shell;assembly=PresentationFramework"
                     xmlns:windows="clr-namespace:System.Windows;assembly=PresentationFramework"
-                    xmlns:coreInternal="clr-namespace:MS.Internal;assembly=PresentationCore"
-
-
-
-
-
-
-
                     xmlns:system="clr-namespace:System;assembly=mscorlib"    >
 
     <ControlTemplate x:Key="RibbonButtonTemplate" TargetType="{x:Type ribbon:RibbonButton}">
@@ -105,14 +97,14 @@
             <Trigger Property="IsMouseOver" Value="True">
                 <Setter TargetName="OuterBorder" Property="Background" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverBackground}" />
                 <Setter TargetName="OuterBorder" Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverBorderBrush}" />
-                <Setter TargetName="InnerBorder" Property="BorderBrush" Value="{StaticResource RibbonButtonMouseOverInnerBorderBrushKey}" />
+                <Setter TargetName="InnerBorder" Property="BorderBrush" Value="{DynamicResource RibbonButtonInnerBorderBrushPointerOver}" />
             </Trigger>
 
             <!-- IsFocused -->
             <Trigger Property="IsKeyboardFocused" Value="True">
                 <Setter TargetName="OuterBorder" Property="Background" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FocusedBackground}" />
                 <Setter TargetName="OuterBorder" Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=FocusedBorderBrush}" />
-                <Setter TargetName="InnerBorder" Property="BorderBrush" Value="{StaticResource RibbonButtonMouseOverInnerBorderBrushKey}" />
+                <Setter TargetName="InnerBorder" Property="BorderBrush" Value="{DynamicResource RibbonButtonInnerBorderBrushPointerOver}" />
             </Trigger>
 
             <!-- IsPressed -->
@@ -133,7 +125,7 @@
             <!-- IsEnabled -->
             <Trigger Property="IsEnabled" Value="False">
                 <Setter TargetName="PART_Image" Property="Opacity" Value="0.5" />
-                <Setter TargetName="OuterBorder" Property="TextElement.Foreground" Value="{StaticResource RibbonDisabledForegroundBrushKey}"/>
+                <Setter TargetName="OuterBorder" Property="TextElement.Foreground" Value="{DynamicResource RibbonForegroundDisabled}"/>
             </Trigger>
 
             <!-- Override potential app-level brushes in HighContrast. -->
@@ -225,18 +217,18 @@
     </ControlTemplate>
 
     <Style x:Key="{x:Type ribbon:RibbonButton}" TargetType="{x:Type ribbon:RibbonButton}" >
-        <Setter Property="Background" Value="Red" />
+        <Setter Property="Background" Value="Transparent" />
         <Setter Property="BorderBrush" Value="Transparent" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="CornerRadius" Value="2" />
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
-        <Setter Property="HorizontalContentAlignment" Value="Center" />
-        <Setter Property="MouseOverBorderBrush" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.MouseOverBorderBrush}" />
-        <Setter Property="MouseOverBackground" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.MouseOverBackground}" />
-        <Setter Property="PressedBorderBrush" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.PressedBorderBrush}" />
-        <Setter Property="PressedBackground" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.PressedBackground}" />
-        <Setter Property="FocusedBorderBrush" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.FocusedBorderBrush}" />
-        <Setter Property="FocusedBackground" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.FocusedBackground}" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />    
+        <Setter Property="MouseOverBackground" Value="{DynamicResource RibbonBackgroundPointerOver}" />
+        <Setter Property="PressedBorderBrush" Value="{DynamicResource RibbonBorderBrushPressed}" />
+        <Setter Property="PressedBackground" Value="{DynamicResource RibbonBackgroundPressed}" />
+        <Setter Property="FocusedBorderBrush" Value="{DynamicResource RibbonBorderBrushFocused}" />
+        <Setter Property="FocusedBackground" Value="{DynamicResource RibbonBackgroundFocused}" />
+        <Setter Property="MouseOverBorderBrush" Value="{DynamicResource RibbonBorderBrushPointerOver}" />
         <Setter Property="ToolTipService.InitialShowDelay" Value="{StaticResource RibbonToolTipInitialShowDelayKey}" />
         <Setter Property="ToolTipService.ShowDuration" Value="{StaticResource RibbonToolTipShowDurationKey}" />
         <Setter Property="ToolTipService.BetweenShowDelay" Value="{StaticResource RibbonToolTipBetweenShowDelayKey}" />

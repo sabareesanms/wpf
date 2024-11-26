@@ -13,5 +13,6 @@
         <ResourceDictionary Source="pack://application:,,,/System.WIndows.Controls.Ribbon.Fluent;component/Resources/Variables.xaml" />
         <ResourceDictionary Source="pack://application:,,,/System.WIndows.Controls.Ribbon.Fluent;component/Resources/Theme/Light.xaml" />
         <ResourceDictionary Source="pack://application:,,,/System.Windows.Controls.Ribbon.Fluent;component/Styles/RibbonButton.xaml" />
+        <!-- <ResourceDictionary Source="pack://application:,,,/System.Windows.Controls.Ribbon.Fluent;component/Styles/Ribbon.xaml" /> -->
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
