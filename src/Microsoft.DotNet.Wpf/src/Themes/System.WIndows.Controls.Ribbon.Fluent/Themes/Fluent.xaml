@@ -13,6 +13,11 @@
         <ResourceDictionary Source="pack://application:,,,/System.WIndows.Controls.Ribbon.Fluent;component/Resources/Variables.xaml" />
         <ResourceDictionary Source="pack://application:,,,/System.WIndows.Controls.Ribbon.Fluent;component/Resources/Theme/Light.xaml" />
         <ResourceDictionary Source="pack://application:,,,/System.Windows.Controls.Ribbon.Fluent;component/Styles/RibbonButton.xaml" />
-        <!-- <ResourceDictionary Source="pack://application:,,,/System.Windows.Controls.Ribbon.Fluent;component/Styles/Ribbon.xaml" /> -->
+        <ResourceDictionary Source="pack://application:,,,/System.Windows.Controls.Ribbon.Fluent;component/Styles/RibbonCheckBox.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/System.Windows.Controls.Ribbon.Fluent;component/Styles/RibbonTextBox.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/System.Windows.Controls.Ribbon.Fluent;component/Styles/RibbonToggleButton.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/System.Windows.Controls.Ribbon.Fluent;component/Styles/RibbonSplitButton.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/System.Windows.Controls.Ribbon.Fluent;component/Styles/RibbonComboBox.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/System.Windows.Controls.Ribbon.Fluent;component/Styles/RibbonRadioButton.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

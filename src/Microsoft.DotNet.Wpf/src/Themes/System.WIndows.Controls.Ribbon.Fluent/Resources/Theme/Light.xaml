@@ -315,18 +315,6 @@
     <SolidColorBrush x:Key="ButtonBorderBrushDisabled" Color="{StaticResource ControlStrokeColorDefault}" />
 
      <!--  RibbonButton  -->
-    <!-- <SolidColorBrush x:Key="RibbonMouseOverBackground" Color="{StaticResource ControlFillColorSecondary}" />
-    <SolidColorBrush x:Key="RibbonMouseOverBorderBrush" Color="{StaticResource ControlStrokeColorDefault}" />
-    <SolidColorBrush x:Key="RibbonButtonMouseOverInnerBorderBrushKey" Color="{StaticResource ControlStrokeColorDefault}" />
-
-    <SolidColorBrush x:Key="RibbonPressedBackground" Color="{StaticResource ControlFillColorTertiary}" />
-    <SolidColorBrush x:Key="RibbonPressedBorderBrush" Color="{StaticResource ControlStrokeColorDefault}" />
-
-    <SolidColorBrush x:Key="RibbonFocusedBackground" Color="{StaticResource ControlFillColorDefault}" />
-    <SolidColorBrush x:Key="RibbonFocusedBorderBrush" Color="{StaticResource ControlStrokeColorDefault}" />
-
-    <SolidColorBrush x:Key="RibbonDisabledForegroundBrushKey" Color="{StaticResource TextFillColorDisabled}" />
- -->
     <SolidColorBrush x:Key="RibbonBackgroundPointerOver" Color="{StaticResource ControlFillColorSecondary}" />
     <SolidColorBrush x:Key="RibbonBorderBrushPointerOver" Color="{StaticResource ControlStrokeColorDefault}" />
     <SolidColorBrush x:Key="RibbonButtonInnerBorderBrushPointerOver" Color="{StaticResource ControlStrokeColorDefault}" />
@@ -336,5 +324,73 @@
     <SolidColorBrush x:Key="RibbonBorderBrushFocused" Color="{StaticResource ControlStrokeColorDefault}" />
     <SolidColorBrush x:Key="RibbonForegroundDisabled" Color="{StaticResource TextFillColorDisabled}" />
 
+    <!--RibbonCheckBox-->    
+    <SolidColorBrush x:Key="RibbonCheckBoxBackgroundUnchecked" Color="{StaticResource SubtleFillColorTransparent}" />
+    <SolidColorBrush x:Key="RibbonCheckBoxBackgroundUncheckedPointerOver" Color="{StaticResource SubtleFillColorTransparent}" />
+    <SolidColorBrush x:Key="RibbonCheckBoxBackgroundUncheckedPressed" Color="{StaticResource SubtleFillColorTransparent}" />
+
+    <SolidColorBrush x:Key="RibbonCheckBoxBorderBrushUnchecked" Color="{StaticResource SubtleFillColorTransparent}" />
+    <SolidColorBrush x:Key="RibbonCheckBoxBorderBrushUncheckedPointerOver" Color="{StaticResource SubtleFillColorTransparent}" />
+    <SolidColorBrush x:Key="RibbonCheckBoxBorderBrushUncheckedPressed" Color="{StaticResource SubtleFillColorTransparent}" />
+
+    <SolidColorBrush x:Key="RibbonCheckBoxCheckBackgroundStrokeUnchecked" Color="{StaticResource ControlStrongStrokeColorDefault}" />
+
+    <SolidColorBrush x:Key="RibbonCheckBoxCheckGlyphForeground" Color="{StaticResource TextOnAccentFillColorPrimary}" />
+    <SolidColorBrush x:Key="RibbonCheckBoxCheckGlyphForegroundPressed" Color="{StaticResource TextOnAccentFillColorSecondary}" />
+    <SolidColorBrush x:Key="RibbonCheckBoxCheckGlyphForegroundDisabled" Color="{StaticResource TextFillColorDisabled}" />
+
+    <SolidColorBrush x:Key="RibbonCheckBoxBorderBrushIndeterminate" Color="{StaticResource SubtleFillColorTransparent}" />
+
+    <SolidColorBrush x:Key="RibbonCheckBoxBorderBrushChecked" Color="{StaticResource SubtleFillColorTransparent}" />
+    <SolidColorBrush x:Key="RibbonCheckBoxBackgroundChecked" Color="{StaticResource SubtleFillColorTransparent}" />
+
+
+    <SolidColorBrush x:Key="RibbonCheckBoxInnerBorderBrushKey" Color="{StaticResource SubtleFillColorTransparent}" />
+
+    
+    <!--  RibbonTextBox  -->
+    <SolidColorBrush x:Key="RibbonTextControlBackground" Color="{StaticResource ControlFillColorDefault}" />
+    <SolidColorBrush x:Key="RibbonTextControlBackgroundPointerOver" Color="{StaticResource ControlFillColorSecondary}" />
+    <SolidColorBrush x:Key="RibbonTextControlBackgroundFocused" Color="{StaticResource ControlFillColorInputActive}" />
+    <SolidColorBrush x:Key="RibbonTextControlBackgroundDisabled" Color="{StaticResource ControlFillColorDisabled}" />
+        <!--<SolidColorBrush x:Key="TextControlBorderBrush" Color="{StaticResource TextControlElevationBorderBrush}" />-->
+    <SolidColorBrush x:Key="RibbonTextControlForeground" Color="{StaticResource TextFillColorPrimary}" />
+    <SolidColorBrush x:Key="RibbonTextControlForegroundDisabled" Color="{StaticResource TextFillColorDisabled}" />
+    <SolidColorBrush x:Key="RibbonTextControlFocusedBorderBrush" Color="{StaticResource SystemAccentColorDark1}" />
+    <SolidColorBrush x:Key="RibbonTextControlBorderBrushDisabled" Color="{StaticResource ControlStrokeColorDefault}" />
+    <SolidColorBrush x:Key="RibbonTextControlPlaceholderForeground" Color="{StaticResource TextFillColorSecondary}" />
+    <SolidColorBrush x:Key="RibbonTextControlButtonForeground" Color="{StaticResource TextFillColorSecondary}" />
+    <LinearGradientBrush x:Key="RibbonTextControlElevationBorderBrush" MappingMode="RelativeToBoundingBox" StartPoint="0,1" EndPoint="0,0">
+        <LinearGradientBrush.GradientStops>
+            <GradientStop Offset="0.025" Color="{StaticResource ControlStrongStrokeColorDefault}" />
+            <GradientStop Offset="0.05" Color="{StaticResource ControlStrokeColorDefault}" />
+        </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+    <!--RibbonToggleButton-->
+    <SolidColorBrush x:Key="RibbonToggleButtonBackground" Color="{StaticResource ControlFillColorDefault}" />
+    <SolidColorBrush x:Key="RibbonToggleButtonBackgroundPointerOver" Color="{StaticResource ControlFillColorSecondary}" />
+    <SolidColorBrush x:Key="RibbonToggleButtonBackgroundPressed" Color="{StaticResource ControlFillColorTertiary}" />
+    <SolidColorBrush x:Key="ToggleButtonBackgroundDisabled" Color="{StaticResource ControlFillColorDisabled}" />
+    <SolidColorBrush x:Key="RibbonToggleButtonBackgroundChecked" Color="{StaticResource ControlFillColorSecondary}" />
+    <SolidColorBrush x:Key="RibbonToggleButtonBackgroundCheckedPointerOver" Color="{StaticResource ControlFillColorSecondary}" Opacity="0.9" />
+    <SolidColorBrush x:Key="RibbonToggleButtonBackgroundCheckedPressed" Color="{StaticResource ControlFillColorSecondary}" Opacity="0.8" />
+    <SolidColorBrush x:Key="ToggleButtonBackgroundCheckedDisabled" Color="{StaticResource AccentFillColorDisabled}" />
+    <!--<SolidColorBrush x:Key="ToggleButtonBorderBrush" Color="{StaticResource ControlElevationBorderBrush}" />-->
+    <SolidColorBrush x:Key="ToggleButtonBorderBrushDisabled" Color="{StaticResource ControlStrokeColorDefault}" />
+    <SolidColorBrush x:Key="RibbonToggleButtonBorderBrushPressed" Color="{StaticResource ControlStrokeColorDefault}" />
+    <SolidColorBrush x:Key="RibbonToggleButtonBorderBrushCheckedPressed" Color="{StaticResource ControlFillColorTransparent}" />
+    <SolidColorBrush x:Key="ToggleButtonBorderBrushCheckedDisabled" Color="{StaticResource ControlFillColorTransparent}" />
+    <SolidColorBrush x:Key="ToggleButtonForeground" Color="{StaticResource TextFillColorPrimary}" />
+    <SolidColorBrush x:Key="ToggleButtonForegroundPressed" Color="{StaticResource TextFillColorSecondary}" />
+    <SolidColorBrush x:Key="ToggleButtonForegroundChecked" Color="{StaticResource TextOnAccentFillColorPrimary}" />
+    <SolidColorBrush x:Key="RibbonToggleButtonForegroundDisabled" Color="{StaticResource TextFillColorDisabled}" />
+    <SolidColorBrush x:Key="ToggleButtonForegroundCheckedPressed" Color="{StaticResource TextOnAccentFillColorSecondary}" />
+    <SolidColorBrush x:Key="ToggleButtonForegroundCheckedDisabled" Color="{StaticResource TextOnAccentFillColorDisabled}" />
+    <SolidColorBrush x:Key="RibbonToggleButtonElevationBorderBrush" Color="{StaticResource SystemAccentColorDark2}"/>
+    <!--RibbonSplitButton-->
+    <Geometry x:Key="DownArrowGeometryKey">M 0 0 L 2.5 3 L 5 0 Z</Geometry>
+    <!--RibbonComboBox-->
+    <SolidColorBrush x:Key="RibbonComboBoxToggleButtonBorderBrushPointerOver" Color="{StaticResource SystemAccentColorDark2}"/>
+    <SolidColorBrush x:Key="RibbonComboBoxBackgroundPointerOver" Color="{StaticResource ControlFillColorSecondary}" />
 
 </ResourceDictionary>
